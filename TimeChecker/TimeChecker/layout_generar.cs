@@ -24,7 +24,17 @@ namespace TimeChecker
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Hide();
+            txt_nombre.Text = "";
             Pantallas.Principal.Show();
+        }
+
+        private void btn_generar_Click(object sender, EventArgs e)
+        {
+            if (txt_nombre.Text != "") {
+                new ImportExcel().generateExcel(txt_nombre.Text);
+            } else {
+                MessageBox.Show("¡Favor de introducir tu nombre!", "Error");
+            }
         }
     }
 }

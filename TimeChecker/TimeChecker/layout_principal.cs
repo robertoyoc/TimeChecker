@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,6 +29,7 @@ namespace TimeChecker
         private void btn_comparar_Click(object sender, EventArgs e)
         {
             this.Hide();
+
             Pantallas.Comparar.Show();
 
         }
@@ -36,6 +39,11 @@ namespace TimeChecker
             Pantallas.Generar.Close();
             Pantallas.Comparar.Close();
             Application.Exit();
+        }
+
+        private void layout_principal_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }

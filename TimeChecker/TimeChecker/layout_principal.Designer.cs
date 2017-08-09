@@ -90,6 +90,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Time Checker";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.layout_principal_FormClosed);
+            this.Load += new System.EventHandler(this.layout_principal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

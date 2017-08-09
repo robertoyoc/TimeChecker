@@ -41,6 +41,7 @@
             this.grd_eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_comparar = new System.Windows.Forms.Button();
+            this.btnActualizarCmb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +92,7 @@
             this.btn_incluir.TabIndex = 8;
             this.btn_incluir.Text = "Incluir";
             this.btn_incluir.UseVisualStyleBackColor = true;
+            this.btn_incluir.Click += new System.EventHandler(this.btn_incluir_Click);
             // 
             // btn_insertar
             // 
@@ -100,6 +102,7 @@
             this.btn_insertar.TabIndex = 9;
             this.btn_insertar.Text = "Añadir Nueva Persona";
             this.btn_insertar.UseVisualStyleBackColor = true;
+            this.btn_insertar.Click += new System.EventHandler(this.btn_insertar_Click);
             // 
             // grd
             // 
@@ -148,12 +151,24 @@
             this.btn_comparar.TabIndex = 12;
             this.btn_comparar.Text = "Comparar";
             this.btn_comparar.UseVisualStyleBackColor = true;
+            this.btn_comparar.Click += new System.EventHandler(this.btn_comparar_Click);
+            // 
+            // btnActualizarCmb
+            // 
+            this.btnActualizarCmb.Location = new System.Drawing.Point(358, 69);
+            this.btnActualizarCmb.Name = "btnActualizarCmb";
+            this.btnActualizarCmb.Size = new System.Drawing.Size(92, 23);
+            this.btnActualizarCmb.TabIndex = 13;
+            this.btnActualizarCmb.Text = "Actualizar Lista";
+            this.btnActualizarCmb.UseVisualStyleBackColor = true;
+            this.btnActualizarCmb.Click += new System.EventHandler(this.btnActualizarCmb_Click);
             // 
             // layout_comparar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 367);
+            this.Controls.Add(this.btnActualizarCmb);
             this.Controls.Add(this.btn_comparar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grd);
@@ -189,5 +204,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn grd_eliminar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_comparar;
+        private System.Windows.Forms.Button btnActualizarCmb;
     }
 }

@@ -82,6 +82,7 @@
             this.btn_generar.TabIndex = 8;
             this.btn_generar.Text = "Generar Formato";
             this.btn_generar.UseVisualStyleBackColor = true;
+            this.btn_generar.Click += new System.EventHandler(this.btn_generar_Click);
             // 
             // layout_generar
             // 
